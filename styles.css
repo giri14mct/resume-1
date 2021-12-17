@@ -1,0 +1,934 @@
+/* Utilities */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Mulish:ital,wght@0,300;0,700;1,700&family=Open+Sans:wght@300&family=Roboto:wght@400;500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+ body {
+    background: #FFFFFF;
+ }
+
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    color: #24364D;
+}
+a:target {
+    border: 2px solid #D4D4D4;
+    background-color: #e5eecc;
+    color:red ;
+  }
+a:active {
+    color: red;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+input {
+    outline: 0;
+    border: 0;
+    width: 350px;
+    padding: 10px 10px;
+    border-bottom: 1px solid black;
+}
+button {
+    border: none;
+    width: 100%;
+    height: 100px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+span {
+    color: #FB2C57;
+    /* padding-bottom: 10px; */
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    margin-left: 6px;
+}
+.content {
+    max-width: 70%;
+    height: 100vh;
+    margin-left: 300px;
+    position: relative;
+}
+.responsive-header  {
+    display: none;
+}
+    i.fa-bars{
+        position: absolute;
+        top: 1.5rem;
+        right: 50px;
+        color: black;
+        cursor: pointer;
+        display: none;
+        z-index: 1;
+    }
+    i.fa-times{
+        position: absolute;
+        top: 1.5rem;
+        display: none;
+        right: 50px;
+        z-index: 1;
+
+    }
+    .icon {
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+    }
+        /* Nav styles starts here  */
+
+.header {
+    position: fixed;
+    max-width: 23.4%;
+    height: auto;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    left: 20px;
+    top: 26px;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#test > ul {
+    margin: 1rem 2.5rem;
+}
+ul > li {
+    list-style: none;
+    text-align: start;
+    padding: 0.8rem 0;
+    border-bottom: 0.4px solid #D6D6D6;
+    text-align: center;
+}
+.nav-footer-container {
+    width: auto;
+    height: auto;
+    background: #E7ECFC;
+    margin-top: 20px;
+}
+.tr {
+    width: 100%;
+    height: 10px;
+    border-left: 135px solid #ccd2e6;
+    border-right: 135px solid #ccd2e6;
+    border-top: 50px solid white;
+}
+.name-log {
+    width: 90px;
+    height: 90px;
+    background: #D2D2D2;  
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -50px auto 0 ;
+    z-index: 1;
+    outline: 10px solid white;
+    position: relative;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0.08em;
+    color: #263238;
+}
+.nav-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.1rem;
+    padding: 4rem 0;
+    background: #ccd2e6;
+    z-index: 1;
+    margin-top: -50px;
+}
+.name {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #24364D;
+    margin-top: 10px;
+}
+.mail > a{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight:lighter;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: #24364D;    
+    text-transform: lowercase;
+}
+.number {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #24364D;
+} 
+.city {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #24364D;
+}
+
+
+
+/* personal styles starts here */
+#personal {
+    height: 100vh;
+    padding-top: 50px;
+}
+.intro-container {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    line-height: 47px;
+    color: #525B67;
+    text-align: start;
+    padding: 10rem 7rem 0;
+}
+.container > section {
+    margin: auto;
+}
+.intro {
+    font-size: 40px;
+    padding: 1rem 0;
+}
+.intro-name {
+    font-size: 40px;
+    padding: 1rem 0;
+}
+#intro-bolder {
+    font-size: 40px;
+    line-height: 35px;
+    letter-spacing: 0.05em;
+    color: #525B67;
+    font-weight: bold;
+    border-bottom: 1px solid #FB2C57;
+}
+.intro-desc {
+    font-size: 26px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    padding: 1rem 0;
+}
+
+/* Academic styles starts here */
+#academic {
+   padding-top: 10px;
+   height: 100vh;
+}
+.academic-container {
+    font-family: Roboto;
+    font-style: normal;
+    text-align: start;
+    margin-top: 40px;
+}
+.academic-title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0.03em;
+    color: #525B67;
+}
+.academic-details {
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+.aca-year {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #525B67;
+}
+.academic-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+}
+.aca-degree {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    color: #FB2C57;
+}
+.aca-name {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: #808586;
+}
+.aca-city {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: #808586;
+}
+
+/* Experience styles starts here */
+#experience {
+    padding-top: 50px;
+height: 100vh;
+}
+.experience-container {
+    font-family: Roboto;
+    font-style: normal;
+}
+.experience-title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #525B67;
+}
+.experience-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+.experience-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+}
+.exp-year {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    color: #525B67;
+}
+.exp-university {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: #808586;
+}
+.exp-city {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: #808586;
+}
+.exp-description {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    flex: 2.5;
+}
+.exp-dec-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    color: #FB2C57;
+}
+.exp-dec {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    color: #808586;
+}
+
+/* skills styles starts here */
+#skills {
+    padding-top: 50px;
+}
+.skills-container {
+    font-family: Roboto;
+}
+.skills-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #525B67;
+}
+.skill-set{
+    width: 100%;
+    padding: 2rem 0;
+}
+.skill-set > p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.03em;
+    color: #24364D;
+}
+.skill-set > p > span{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #C2553D;
+    border: none;
+}
+.skill-bar-container{
+    width: 70%;
+    height: 10px;
+    background: #E0E0E0;
+    margin-top: 20px;
+    border-radius: 16px;
+}
+.skill-bar-container > .bar{
+    width: 60%;
+    height: 10px;
+    background-color: #FC214E;
+    border-radius: 16px;
+}
+.skills-sets {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* personal styles starts here */
+
+.personal-container {
+    padding-top: 5rem;
+}
+.personal-heading {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #525B67; 
+}
+.personal-content {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    color: #808586;
+    padding-top: 40px;
+}
+
+/* accomplishment styles starts here */
+#accomplishment {
+    padding-top: 50px;
+}
+.accomplishment-container {
+    font-family: Roboto;
+    font-style: normal;
+}
+.accomplishment-title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #525B67;
+}
+.accomplishment-contents {
+   margin-top: 70px;
+   display: flex;
+   flex-direction: column;
+   gap: 5rem;
+}
+.accomplishment-content {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+.acc-year-container {
+    flex: 1.5;
+}
+.accomplishment-details {
+    flex: 3;
+}
+.acc-year {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.02em; 
+    color: #525B67;    
+}
+.acc-title {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: #808586;    
+    margin: 20px 0;
+}
+.acc-des-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    color: #FB2C57;
+}
+.acc-desc {
+
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    color: #808586;
+    margin-top: 20px;
+}
+/* contact styles starts here */
+#contact {
+    padding-top: 80px;
+}
+.contact-container {
+    height: 100vh;
+}
+.contact-title-desc > a {
+    color: #FB2C57;
+    text-transform: lowercase;
+}
+.form-footer-desc > a {
+    color: #FB2C57;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.contact-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0.03em;
+    color: #525B67;
+}
+.contact-title-desc {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.05em;
+    color: #525B67;
+    margin-top: 20px;
+}
+.form-container {
+    margin: 40px 0;
+    padding: 40px 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+.input > input {
+    width: 350px;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #D8DFF5;
+}
+.form-msg > textarea{
+    width: 737px;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #D8DFF5;
+}
+.form-msg > button {
+    width: 151px;
+    height: 32px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    color: #525B67;
+    background: #E8B236;
+    border-radius: 3px;
+    margin-top: 30px;
+}
+.input-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+.input > input {
+    width: 100%;
+}
+.input {
+    flex: 1;
+}
+.form-msg > textarea {
+    width: 100%;
+}
+.form-footer {
+    margin-top: 100px;
+}
+.form-footer-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0.03em;
+    color: #525B67;
+}
+.form-footer-desc {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.03em;
+    color: #525B67;
+    margin-top: 2.5rem;
+}
+
+                        /* RESPONSIVE STYLES STARTS HERE */
+
+@media (max-width:1100px) {
+    i.fa-bars {
+        display: none;
+    }
+    i.fa-times {
+        display: none;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .header {
+        display: none;
+    }
+    .responsive-header {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;        
+        color: #666666;
+        display: block;
+    }
+    #js-menu {
+        max-width: 720px;
+        margin: 0 auto;
+        height: 130px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 7px;
+    }
+    #js-menu > .name-log{
+        width: 50px;
+        height: 50px;
+        margin: 0;
+        z-index: unset;
+        font-size: 17px;
+        font-weight: bold;
+    }
+    ul {
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+    }
+    #js-menu >ul > li > a{
+        font-weight:500;
+        padding: 0 10px;
+    }
+    #js-menu > ul  >li {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+    .content {
+        max-width: 960px;
+        margin-left: 0px;
+        margin: 0 auto;
+    }
+    #personal {
+        height: auto;
+    }
+    #academic {
+        height: auto;
+    }
+    #experience {
+        height: auto;
+    }
+    .intro-container {
+        padding: 0px;
+    }
+    .personal-container {
+        padding-top: 1rem;
+    }
+    #accomplishment {
+        padding-top: 80px;
+    }
+    .contact-container {
+        height: 50vh;
+    }
+    .form-footer-desc {
+        padding-bottom: 50px;
+    }
+}   
+@media (max-width:1050px) {
+    .content {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    .skills-sets {
+        display: flex;
+        flex-direction: row;
+        width: 720px;
+        margin: 0 auto;
+        justify-content: space-evenly;
+    }
+    .exp-description {
+        flex: 2.5;
+    }
+    .accomplishment-content {
+        gap: 0px;
+    }
+    .accomplishment-details {
+        flex: 2.5;
+    }
+}
+@media (max-width: 500px) {
+    .responsive-header {
+        display: inline;
+    }
+    i.fa-bars {
+        display: block;
+    }
+    i.fa-times {
+        display: block;
+        color: black;
+}
+    #js-menu  {
+        position: absolute;
+        background-color: #D2D2D2;
+        top: 0;
+        left: -500px;
+        z-index: 1;
+        width: 100%;    
+        height: 100vh;
+}
+    #js-menu.active {
+        position: fixed;
+        left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #js-menu  > ul{
+        position: relative;
+        top: -180px;
+        height: 40vh;
+        flex-direction: column;
+    }
+    #js-menu >ul > li > a{
+        color: black;
+        font-weight: 100;
+    }
+     .name-log {
+        display: none;
+    }
+    .container {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: flex-start;
+    }
+    .content {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    ul {
+        position: static;
+    }
+    #personal {
+        height: auto;
+    }
+    .intro-container {
+        padding: 0px;
+    }
+    .intro {
+        font-size: 38px;
+    }
+    .intro-desc {
+        font-size: 20px;
+    }
+    .intro-name {
+        font-size: 39px;
+    }
+    #academic {
+        height: auto;
+    }
+    .academic-details {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .academic-detail {
+        gap: 10px;
+    }
+    .academic-title {
+        text-align: center;
+        margin: 0 auto;
+    }
+    #experience {
+        height: auto;
+    }
+    .experience-details {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 60px;
+    }
+    .experience-detail {
+        gap: 10px;
+    }
+    .experience-title {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .exp-dec {
+        font-size: 16px;
+    }
+    .skills-title {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .skills-sets {
+        flex-direction: column;
+        align-items: center;
+        width: 360px;
+        padding-top: 2rem;
+    }
+    .skill-set {
+        padding: 16px 0;
+    }
+    .personal-heading {
+        text-align: center;
+        margin: 10px auto;
+    }
+    .personal-content {
+        padding:1rem 2px;
+        font-size: 16px;
+    }
+    .accomplishment-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .accomplishment-title {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .acc-title {
+        margin: 10px 0;
+    }
+    .acc-desc {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+    .contact-container {
+        height: auto;
+    }
+    .contact-title-desc {
+        font-size: 16px;
+        padding: 1rem;
+    }
+    .contact-title {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .form-msg > textarea {
+        width: 100%;
+    }
+    .input > input {
+        width: 100%;
+    }
+    .input-flex {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .form-footer-title {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .form-footer {
+        margin-top: 50px;
+    }
+    .form-footer-desc {
+        font-size: 14px;
+    }
+    .form-footer-desc > a {
+        font-size: 12px;
+    }
+}
+@media(max-width:321px) {
+    .container {
+        overflow-x: hidden;
+    }
+}
